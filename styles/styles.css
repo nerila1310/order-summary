@@ -106,16 +106,6 @@ p {
     color: var(--desaturated-blue);
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-    background-color: var(--very-pale-blue);
-}
-
 .buttons {
     display: flex;
     flex-direction: column;
@@ -151,4 +141,15 @@ button {
 
 .cancel:active {
     color: #000;
+}
+
+.attribution {
+    margin-top: 10px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    background-color: var(--pale-blue);
 }
