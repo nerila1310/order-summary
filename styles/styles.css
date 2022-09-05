@@ -1,3 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    --red-hat-display: 'Red Hat Display', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--pale-blue);
+    text-align: center;
+    font-family: var(--red-hat-display);
+    font-size: 16px;
+}
+
+img {
+    width: 100;
+}
+
+p {
+    padding: 0 35px;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+}
+
+@media (min-width: 376px) {
+    p {
+        padding: 0 60px;
+    }
+}
+
+.container {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-attachment: unset;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.center {
+    background-color: hsl(0, 0%, 100%);
+    width: 88%;
+    border-radius: 15px;
+}
+
+@media (min-width: 376px) {
+    .center {
+        width: 26%;
+    }
+}
+
+.hero {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 23px;
+}
+
+.music-container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: var(--very-pale-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.music-container a {
+    color: var(--bright-blue);
+}
+
+.music-container a:active {
+    filter: opacity(50%);
+}
+
+.plan {
+    margin-left: 10px;
+}
+
+.plan span {
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -5,4 +113,42 @@
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+    background-color: var(--very-pale-blue);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 25px auto;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.payment {
+    background-color: var(--bright-blue);
+    color: var(--pale-blue);
+    margin-bottom: 20px;
+    box-shadow: 0px 20px 20px 0px rgba(31, 46, 86, 0.2);
+}
+
+.payment:active {
+    filter: opacity(50%);
+}
+
+.cancel {
+    background-color: transparent;
+    color: var(--desaturated-blue);
+}
+
+.cancel:active {
+    color: #000;
 }
